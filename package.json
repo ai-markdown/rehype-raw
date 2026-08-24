@@ -81,7 +81,6 @@
   },
   "homepage": "https://github.com/ai-markdown/rehype-raw#readme",
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }
