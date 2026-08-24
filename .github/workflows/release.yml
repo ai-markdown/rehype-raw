@@ -35,6 +35,8 @@ jobs:
           [ "$TAG" = "$PKG" ] || { echo "tag $TAG != package.json $PKG"; exit 1; }
       # No lockfile is committed (upstream convention), so npm ci cannot run.
       - run: npm install --no-audit --no-fund
+      - name: Build (generates the type declarations)
+        run: npx tsc --build
       - name: Test
         run: node --conditions development test.js
       - name: Publish
