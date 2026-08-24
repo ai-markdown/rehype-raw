@@ -6,7 +6,7 @@
   ],
   "dependencies": {
     "@types/hast": "^3.0.0",
-    "hast-util-raw": "npm:@ai-markdown/hast-util-raw@^9.1.1",
+    "hast-util-raw": "npm:@ai-markdown/hast-util-raw@^9.1.2",
     "vfile": "^6.0.0"
   },
   "description": "rehype plugin to reparse the tree (and raw nodes)",
@@ -54,7 +54,7 @@
     "trailingComma": "none",
     "useTabs": false
   },
-  "version": "7.0.1",
+  "version": "7.0.2",
   "remarkConfig": {
     "plugins": [
       "remark-preset-wooorm"
