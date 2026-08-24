@@ -1,12 +1,12 @@
 {
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
-  "bugs": "https://github.com/rehypejs/rehype-raw/issues",
+  "bugs": "https://github.com/ai-markdown/rehype-raw/issues",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
   "dependencies": {
     "@types/hast": "^3.0.0",
-    "hast-util-raw": "^9.0.0",
+    "hast-util-raw": "npm:@ai-markdown/hast-util-raw@^9.1.1",
     "vfile": "^6.0.0"
   },
   "description": "rehype plugin to reparse the tree (and raw nodes)",
@@ -45,7 +45,7 @@
     "unified"
   ],
   "license": "MIT",
-  "name": "rehype-raw",
+  "name": "@ai-markdown/rehype-raw",
   "prettier": {
     "bracketSpacing": false,
     "singleQuote": true,
@@ -54,13 +54,13 @@
     "trailingComma": "none",
     "useTabs": false
   },
-  "version": "7.0.0",
+  "version": "7.0.1",
   "remarkConfig": {
     "plugins": [
       "remark-preset-wooorm"
     ]
   },
-  "repository": "rehypejs/rehype-raw",
+  "repository": "ai-markdown/rehype-raw",
   "scripts": {
     "build": "tsc --build --clean && tsc --build && type-coverage",
     "format": "remark --frail --output --quiet -- . && prettier --log-level warn --write -- . && xo --fix",
@@ -78,5 +78,10 @@
   "type": "module",
   "xo": {
     "prettier": true
+  },
+  "homepage": "https://github.com/ai-markdown/rehype-raw#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }

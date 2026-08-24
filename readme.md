@@ -1,5 +1,23 @@
 # rehype-raw
 
+<!-- fork banner -->
+
+> **Fork notice** — this is `@ai-markdown/rehype-raw`, a fork of
+> [`rehype-raw`][upstream-repo] at 7.0.0 whose ONLY change is one
+> `package.json` line: the `hast-util-raw` dependency is aliased to
+> [`@ai-markdown/hast-util-raw`][fork-raw], which carries the
+> [`@ai-markdown/hast-util-from-parse5`][fork-fp5] fix for a crash on
+> `<template>` inside foreign content — `<svg><template>x</template>` in
+> raw HTML threw `TypeError: Cannot read properties of undefined (reading
+> 'nodeName')` and took the whole rehype pipeline down with it. No source
+> line differs from upstream. Usage is identical — only the package name
+> changes. To be deprecated when the fix lands upstream.
+>
+> [upstream-repo]: https://github.com/rehypejs/rehype-raw
+> [fork-raw]: https://github.com/ai-markdown/hast-util-raw
+> [fork-fp5]: https://github.com/ai-markdown/hast-util-from-parse5
+
+
 [![Build][build-badge]][build]
 [![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
